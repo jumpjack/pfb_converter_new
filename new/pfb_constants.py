@@ -1,0 +1,363 @@
+PFB_MAGIC_NUMBER = 0xdb0ace00
+PFB_MAGIC_ENCODED = 0xdb0ace01
+PFB_MAGIC_NUMBER_LE = 0x00ce0adb
+PFB_MAGIC_ENCODED_LE = 0x10ce0adb
+PFB_VERSION_NUMBER = 23
+PFBV_NODE_BSPHERE = 5
+PFBV_GSET_DO_DP = 5
+PFBV_LPSTATE_CALLIG = 5
+PFBV_CLIPTEXTURE = 6
+PFBV_GSET_BBOX_FLUX = 8
+PFBV_FLUX_SYNC_GROUP = 10
+PFBV_SWITCH_VAL_FLUX = 11
+PFBV_UFUNC = 12
+PFBV_UDATA_SLOT_FUNCS = 16
+PFBV_FLUX_SYNC_GROUP_NAMES = 17
+PFBV_ASD_SYNC_GROUP = 17
+PFBV_ASD_GSTATES = 18
+PFBV_MULTITEXTURE = 19
+PFBV_ANISOTROPY = 20
+PFBV_SHADER = 21
+PFBV_ANISOTROPY_PFA = 22
+PFBV_IBR_TEXTURE = 23
+UDT_MEMORY = 0
+UDT_PF_OBJECT = 1
+UDT_USER_DEFINED = 2
+UDF_UDATA = 0
+UDF_PATCH = 1
+UDF_TRAV_DATA = 2
+UDF_RASTER_FUNC = 3
+UDF_CALLIG_FUNC = 4
+L_MTL = 0
+L_TEX = 1
+L_TENV = 2
+L_GSTATE = 3
+L_LLIST = 4
+L_VLIST = 5
+L_CLIST = 6
+L_NLIST = 7
+L_TLIST = 8
+L_ILIST = 9
+L_GSET = 10
+L_UDATA = 11
+L_NODE = 12
+L_FLIST = 13
+L_MORPH = 14
+L_LODSTATE = 15
+L_FOG = 16
+L_TGEN = 17
+L_LMODEL = 18
+L_LIGHT = 19
+L_CTAB = 20
+L_LPSTATE = 21
+L_HLIGHT = 22
+L_LSOURCE = 23
+L_FRUST = 24
+L_FONT = 25
+L_STRING = 26
+L_IMAGE = 27
+L_CUSTOM = 28
+L_TLOD = 29
+L_ASDDATA = 30
+L_QUEUE = 31
+L_ITILE = 32
+L_ICACHE = 33
+L_FLUX = 34
+L_ENGINE = 35
+L_UFUNC = 36
+L_UDATA_NAME = 37
+L_UDATA_LIST = 38
+L_SG_NAME = 39
+L_SHADER = 40
+L_IBR_TEX = 41
+L_COUNT = 42
+MEM_ARENA = 0
+MEM_CBUF = 1
+MEM_FLUX = 2
+STATE_TRANSPARENCY = 1
+STATE_ANTIALIAS = 2
+STATE_DECAL = 3
+STATE_ALPHAFUNC = 4
+STATE_ENLIGHTING = 5
+STATE_ENTEXTURE = 6
+STATE_ENFOG = 7
+STATE_CULLFACE = 8
+STATE_ENWIREFRAME = 9
+STATE_ENCOLORTABLE = 10
+STATE_ENHIGHLIGHTING = 11
+STATE_ENLPOINTSTATE = 12
+STATE_ENTEXGEN = 13
+STATE_ALPHAREF = 14
+STATE_FRONTMTL = 15
+STATE_BACKMTL = 16
+STATE_TEXTURE = 17
+STATE_TEXENV = 18
+STATE_FOG = 19
+STATE_LIGHTMODEL = 20
+STATE_LIGHTS = 21
+STATE_COLORTABLE = 22
+STATE_HIGHLIGHT = 23
+STATE_LPOINTSTATE = 24
+STATE_TEXGEN = 25
+STATE_ENTEXMAT = 26
+STATE_TEXMAT = 27
+STATE_ENTEXLOD = 28
+STATE_TEXLOD = 29
+STATE_END = -1
+TEXTYPE_TEXTURE = 0
+TEXTYPE_CLIPTEXTURE = 1
+BROKEN_SPLINE = 500000.0
+COMPONMENT_MASK = 0x00000f
+TWO_BYTE_COMPONENTS = 0x000010
+ROW_SIZE_MASK = 0xffff00
+ROW_SIZE_SHIFT = 8
+COMPONENT_ORDER_IGL = 1
+COMPONENT_ORDER_OGL = 2
+COMPONENT_ORDER = COMPONENT_ORDER_OGL
+IS_PFI = 0x00000001
+IS_PFI_MULTI = 0x00000002
+FF_PUSH = 0x00000001
+FF_ON_DEMAND = 0x00000002
+FF_COPY_LAST_DATA = 0x00000004
+FRAME_TIME_FLUX = -2
+EF_RANGE_CHECK = 0x00000001
+EF_TIME_SWING = 0x00000002
+EF_MATRIX_POST_MULT = 0x00000004
+N_LIGHTPOINT = 0
+N_TEXT = 1
+N_GEODE = 2
+N_BILLBOARD = 3
+N_LIGHTSOURCE = 4
+N_GROUP = 5
+N_SCS = 6
+N_DCS = 7
+N_PARTITION = 8
+N_SCENE = 9
+N_SWITCH = 10
+N_LOD = 11
+N_SEQUENCE = 12
+N_LAYER = 13
+N_MORPH = 14
+N_ASD = 15
+N_FCS = 16
+N_DOUBLE_DCS = 17
+N_DOUBLE_FCS = 18
+N_DOUBLE_SCS = 19
+N_IBR_NODE = 20
+N_CUSTOM = 0x10000000
+N_CUSTOM_MASK = 0x0fff0000
+N_NOT_CUSTOM_MASK = 0x0000ffff
+N_CUSTOM_SHIFT = 16
+N_CUSTOM_MAX = 0x1000
+CS_UNCONSTRAINED = 0xffffffff
+PFB_SWITCH_ON = -1
+PFB_SWITCH_OFF = -2
+BB_POS_FLUX = -2
+MORPH_ATTR_COLOR4 = 1
+MORPH_ATTR_NORMAL3 = 2
+MORPH_ATTR_TEXCOORD2 = 3
+MORPH_ATTR_COORD3 = 4
+MORPH_ATTR_OTHER = 5
+MORPH_ATTR_MISSING = -1
+ASD_ATTR_NORMALS = 0x1
+ASD_ATTR_COLORS = 0x2
+ASD_ATTR_TCOORDS = 0x4
+
+l_name = [
+    "Material",
+    "Texture",
+    "TexEnv",
+    "GeoState",
+    "Length List",
+    "Vertex List",
+    "Color List",
+    "Normal List",
+    "TexCoord List",
+    "Index List",
+    "GeoSet",
+    "User Data",
+    "Node",
+    "Other List",
+    "Morph",
+    "LOD State",
+    "Fog",
+    "Tex Gen",
+    "Light Model",
+    "Light",
+    "Color Table",
+    "Light Point State",
+    "Highlight",
+    "Light Source",
+    "Frustum",
+    "Font",
+    "String",
+    "Image",
+    "Custom",
+    "TexLOD",
+    "ASD Data",
+    "Queue",
+    "ImageTile",
+    "ImageCache",
+    "Flux",
+    "Engine",
+    "User Func",
+    "User Data Slot Name",
+    "User Data List",
+    "Flux Sync Group Name",
+    "Shader",
+    "IBR texture"]
+
+node_names = ["LightPoint",
+                   "Text",
+                   "Geode",
+                   "Billboard",
+                   "LightSource",
+                   "Group",
+                   "SCS",
+                   "DCS",
+                   "Partition",
+                   "Scene",
+                   "Switch",
+                   "LOD",
+                   "Sequence",
+                   "Layer",
+                   "Morph",
+                   "ASD",
+                   "FCS",
+                   "DoubleDCS",
+                   "DoubleFCS",
+                   "DoubleSCS",
+                   "IBRnode"]
+
+PFGS_OFF = 0
+PFGS_OVERALL = 1
+PFGS_PER_PRIM = 2
+PFGS_PER_VERTEX = 3
+
+PFGS_POINTS = 0
+PFGS_LINES = 1
+PFGS_LINESTRIPS = 2   
+PFGS_TRIS = 3
+PFGS_QUADS = 4
+PFGS_TRISTRIPS = 5
+PFGS_FLAT_LINESTRIPS = 6
+PFGS_FLAT_TRISTRIPS = 7
+PFGS_POLYS = 8
+PFGS_TRIFANS = 9
+PFGS_FLAT_TRIFANS = 10
+PFGS_NUM_PRIMS = 11
+
+# Original C definitions:
+#define PFGS_POINTS	    	0
+#define PFGS_LINES	    	1
+#define PFGS_LINESTRIPS	    	2
+#define PFGS_TRIS	    	3
+#define PFGS_QUADS	    	4
+#define PFGS_TRISTRIPS	    	5
+#define PFGS_FLAT_LINESTRIPS	6
+#define PFGS_FLAT_TRISTRIPS	7
+#define PFGS_POLYS		8
+#define PFGS_TRIFANS		9
+#define PFGS_FLAT_TRIFANS	10
+#define PFGS_NUM_PRIMS		11
+
+
+
+gsb_table = [4,
+                PFGS_OFF,
+                PFGS_PER_VERTEX,
+                PFGS_PER_PRIM,
+                PFGS_OVERALL]
+ 
+gspt_table = [11,
+                 PFGS_TRISTRIPS,
+                 PFGS_TRIS,
+                 PFGS_POINTS,
+                 PFGS_LINES,
+                 PFGS_LINESTRIPS,
+                 PFGS_FLAT_LINESTRIPS,
+                 PFGS_QUADS,
+                 PFGS_FLAT_TRISTRIPS,
+                 PFGS_POLYS,
+                 PFGS_TRIFANS,
+                 PFGS_FLAT_TRIFANS]
+
+# in C:
+#  static const int gspt_table[] =
+#            {11,
+# 				 PFGS_TRISTRIPS,
+# 				 PFGS_TRIS,
+# 				 PFGS_POINTS,
+# 				 PFGS_LINES,
+# 				 PFGS_LINESTRIPS,
+# 				 PFGS_FLAT_LINESTRIPS,
+# 				 PFGS_QUADS,
+# 				 PFGS_FLAT_TRISTRIPS,
+# 				 PFGS_POLYS,
+# 				 PFGS_TRIFANS,
+# 				 PFGS_FLAT_TRIFANS};
+
+gspt_table_strings = [
+    "11",
+    "PFGS_TRISTRIPS",
+    "PFGS_TRIS",
+    "PFGS_POINTS",
+    "PFGS_LINES",
+    "PFGS_LINESTRIPS",
+    "PFGS_FLAT_LINESTRIPS",
+    "PFGS_QUADS",
+    "PFGS_FLAT_TRISTRIPS",
+    "PFGS_POLYS",
+    "PFGS_TRIFANS",
+    "PFGS_FLAT_TRIFANS"
+]
+
+
+node_type_dict = {
+    0: "N_LIGHTPOINT",
+    1: "N_TEXT",
+    2: "N_GEODE",
+    3: "N_BILLBOARD",
+    4: "N_LIGHTSOURCE",
+    5: "N_GROUP",
+    6: "N_SCS",
+    7: "N_DCS",
+    8: "N_PARTITION",
+    9: "N_SCENE",
+    10: "N_SWITCH",
+    11: "N_LOD",
+    12: "N_SEQUENCE",
+    13: "N_LAYER",
+    14: "N_MORPH",
+    15: "N_ASD",
+    16: "N_FCS",
+    17: "N_DOUBLE_DCS",
+    18: "N_DOUBLE_FCS",
+    19: "N_DOUBLE_SCS",
+    20: "N_IBR_NODE",
+    21: "N_SUBDIV_SURFACE",
+    22: "N_TORUS",
+    23: "N_NURB_SURFACE",
+    24: "N_NURB_CURVE2D",
+    25: "N_LINE2D",
+    26: "N_PIECEWISEPOLYCURVE2D",
+    27: "N_PIECEWISEPOLYSURFACE",
+    28: "N_PLANE_SURF",
+    29: "N_SPHERE_SURF",
+    30: "N_CONE",
+    31: "N_CYLINDER",
+    32: "N_LINE3D",
+    33: "N_NURB_CURVE3D",
+    34: "N_PIECEWISEPOLYCURVE3D",
+    35: "N_HSPLINE_SURFACE",
+    36: "N_SWEPT_SURFACE",
+    37: "N_FRENET_SWEPT_SURFACE",
+    38: "N_COONS",
+    39: "N_COMPOSITE_CURVE3D",
+    40: "N_CIRCLE2D",
+    41: "N_SUPERQUADCURVE2D",
+    42: "N_RULED",
+    43: "N_CIRCLE3D",
+    44: "N_SUPERQUADCURVE3D",
+    45: "N_ORIENTEDLINE3D"
+}
