@@ -23,14 +23,19 @@ History:
 
 
 
-- IRIS GL (1982) 
-- IRIS Inventor (1992)
-- OpenGL (1992)
-- Open Inventor (1994) (**)
+- [IRIS](https://en.wikipedia.org/wiki/SGI_IRIS) GL (1982) 
+- [IRIS](https://en.wikipedia.org/wiki/SGI_IRIS) Inventor (1992)
+- [OpenGL](https://en.wikipedia.org/wiki/OpenGL) (1992)
+- [Open Inventor](https://en.wikipedia.org/wiki/Open_Inventor) (1994) (**)
 - IRIS Performer (1995) 
-- OpenGL Performer (1996-97)
+- [OpenGL Performer](https://en.wikipedia.org/wiki/OpenGL_Performer) (1996-97)
+- Cosmo3d
+- [OpenGL++](https://en.wikipedia.org/wiki/OpenGL_plus_plus)
+- [Fahrenheit](https://en.wikipedia.org/wiki/Fahrenheit_graphics_API)
+- 
 
-- IRIS = I[ntegrated Raster Imaging System](https://en.wikipedia.org/wiki/SGI_IRIS) (Hardware by SGI) 
+- IRIS = [Integrated Raster Imaging System](https://en.wikipedia.org/wiki/SGI_IRIS) (Hardware by SGI)
+- IRIX = IRIS Operating System based on Unix
 - GL = Graphics Library
 - SGI = [Silicon Grpahics Inc](https://en.wikipedia.org/wiki/Silicon_Graphics)
 
