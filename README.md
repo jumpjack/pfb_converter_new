@@ -21,7 +21,7 @@ Original OpenGL Performer source code: https://github.com/jumpjack/SGI-OpenGL-Pe
 
 History:
 
-Iris Inventor --> Open Inventor (**) --> 
+
 
 - IRIS GL (1982) 
 - IRIS Inventor (1992)
@@ -29,5 +29,9 @@ Iris Inventor --> Open Inventor (**) -->
 - Open Inventor (1994) (**)
 - IRIS Performer (1995) 
 - OpenGL Performer (1996-97)
+
+- IRIS = I[ntegrated Raster Imaging System](https://en.wikipedia.org/wiki/SGI_IRIS) (Hardware by SGI) 
+- GL = Graphics Library
+- SGI = [Silicon Grpahics Inc](https://en.wikipedia.org/wiki/Silicon_Graphics)
 
 (**) Not "open source", but "OpenGL based"!
