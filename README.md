@@ -30,7 +30,7 @@ History:
 - IRIS Performer (1995) 
 - [OpenGL Performer](https://en.wikipedia.org/wiki/OpenGL_Performer) (1996-97)
 - Cosmo3d
-- [Coin3d](https://en.wikipedia.org/wiki/Coin3D) API by Systems in Motion (SIM)  --> Kongsberg SIM
+- [Coin3d](https://en.wikipedia.org/wiki/Coin3D)(***) API by Systems in Motion (SIM) ([source code](https://sourceforge.net/projects/coin3d/files/Coin-3.1.3.tar.gz/download)) --> Kongsberg SIM
 - [OpenGL++](https://en.wikipedia.org/wiki/OpenGL_plus_plus)
 - [Fahrenheit](https://en.wikipedia.org/wiki/Fahrenheit_graphics_API)
 
@@ -42,3 +42,5 @@ History:
 - SGI = [Silicon Grpahics Inc](https://en.wikipedia.org/wiki/Silicon_Graphics)
 
 (**) Not "open source", but "OpenGL based"!
+
+(***) Being only a 3D rendering library, Coin needs a user interface binding to be able to open windows, handle user input etc. GUI Bindings are available for the native Microsoft Windows GUI (SoWin), Trolltech's QT (SoQt), Xt/Motif on X Windows (SoXt), and the native Mac OS X GUI (Sc21).
