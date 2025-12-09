@@ -1,5 +1,12 @@
 # PFB converter
 
+<img width="370" height="203" alt="image" src="https://github.com/user-attachments/assets/fb16edb8-1bc7-4d60-a305-45d283f94d5e" />
+
+Spirit rover at Troy
+
+----------------
+
+
 Tool to convert PFB(*) files to a 3d format that can be read by modern software.
 
 Bugs fixed
