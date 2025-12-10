@@ -2,7 +2,7 @@
 
 <img width="370" height="203" alt="image" src="https://github.com/user-attachments/assets/fb16edb8-1bc7-4d60-a305-45d283f94d5e" />
 
-Spirit rover at Troy
+Spirit rover at Troy. See it [here](https://sketchfab.com/3d-models/troy-final-resting-position-of-spirit-rover-bd2535ef9cdd468abb213d7a27f42bb0) in immersive 3d with your Meta Quest or any VR viewer.
 
 ----------------
 
