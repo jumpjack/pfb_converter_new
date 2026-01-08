@@ -9,11 +9,61 @@ Spirit rover at Troy. See it [here](https://sketchfab.com/3d-models/troy-final-r
 
 Tool to convert PFB(*) files to a 3d format that can be read by modern software.
 
-Bugs fixed
-- PF_MAX_TEXTURES_19 = 4 (not 19)
-- N_LOD is not a node of type "group"
-- Added one "appearance" field to the end of geoset reading (don't know why, decided by AI...)
+## Usage
+```
+pfb2obj.py [-h] [-t {NASA,other}] [-i INPUT] [-o OUTPUT] [-of OUTPUT_FOLDER] [-tf TEXTURES_FOLDER]
+                  [-bf BASE_FOLDER] [-l LOD] [-tse TEXTURE_SOURCE_EXTENSION] [-tde TEXTURE_DESTINATION_EXTENSION]
+                  [-ot ONLY_TEXTURES] [-r REFERENCE] [-v VERBOSE]
 
+```
+
+### Basic example
+
+`python pfb2obj.py -t NASA --base-folder C:\Downloads\ --LOD 0 --input C:\Downloads\PFB\inputfile.pfb`
+
+Converts **inputfile.pfb** to **inputfile.obj** using NASA standard for textures, maximum level of detail; .obj file is saved into  C:\Downloads\ , textures are saved into C:\Downloads\textures
+
+### Options
+
+```
+  -t, --texture {NASA,other}
+                        Options: NASA, other . Specify if texture are standard or for NASA rovers
+  -i, --input INPUT     Input PFB file
+  -o, --output OUTPUT   Output OBJ file (optional; if not specified, input file will be used as base for the name).
+                        Default: "input.OBJ"
+  -of, --output-folder OUTPUT_FOLDER
+                        Folder for output files (.obj+.mtl) and textures folder. Must be already present. Default:
+                        "mymodels\"
+  -tf, --textures-folder TEXTURES_FOLDER
+                        Folder to store downloaded textures, also referenced in MTL file. Default: "textures\"
+  -bf, --base-folder BASE_FOLDER
+                        Root folder for output folder Default: ".\"
+  -l, --LOD LOD         Level Of Detail (LOD); 0 = higher definition, 6 = minimum definition. Default: "6"
+  -tse, --texture-source-extension TEXTURE_SOURCE_EXTENSION
+                        Original extension of texture, to be changed into argument of --texture-destination-extension.
+                        Default: "rgb"
+  -tde, --texture-destination-extension TEXTURE_DESTINATION_EXTENSION
+                        Final extension of texture, from original specified in --texture-source-extension. Default:
+                        "img.jpg"
+  -ot, --only-textures ONLY_TEXTURES
+                        Parses PFB file to extract only terxtures names. Default: "False"
+  -r, --reference REFERENCE
+                        Reference system: x_zy, xzy, xyz Default: "x_zy"
+  -v, --verbose VERBOSE
+                        Amount of debug messages shown
+
+
+```
+
+## Bugs fixed from original source
+-  PF_MAX_TEXTURES_19 = 4 (not 19)
+-  N_LOD is not a node of type "group"
+-  Added one "appearance" field to geoset reading (don't know why...)
+-  Added 1 position increment while reading geostate in case of statemode == STATE_ENTEXTURE
+-  aniso_degree was read but not stored
+
+
+------------
 
 Se also this repo for related stuff: https://github.com/jumpjack/VST-converter/tree/main/PFB/experiments
 
